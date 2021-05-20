@@ -9,6 +9,7 @@ const Home = () => {
       <div class="topnav">
     
         <div class="topnav-centered">
+          <span class="material-icons">&#xE87C;</span>
           <Link to="/">Informatica 404</Link>
         </div>
           <div class="topnav-right">
@@ -22,7 +23,7 @@ const Home = () => {
       <div class="contenedor">
         <div class="contendor-titulos">
           <h1 class="title">¡Hola, somos Informatica 404!</h1>
-          <h1 class="title">Diseñamos exeperiencias moviles y web</h1>
+          <h2 class="subtitle">Diseñamos exeperiencias moviles y web</h2>
         </div>
         <div class="contendor-imagen">
           <img src={foto} alt="foto"/>
