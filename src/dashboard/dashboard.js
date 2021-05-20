@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import firebase from "firebase";
 import Calendar from 'react-calendar';
@@ -7,24 +7,6 @@ import Calendar from 'react-calendar';
 
 function App() {
   const [value, onChange] = useState(new Date());
-  const [usuarios, setCities] = useState([]);
-
-  const readAllData = () => {
-    const db = firebase.firestore();
-    db.collection("usuarios").onSnapshot((querySnapshot) => {
-      let allCities = [];
-      querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
-        allCities.push(doc.data());
-      });
-
-      setCities(allCities);
-    });
-  };
-
-  useEffect(() => {
-    readAllData();
-  }, []);
 
 
   const guardarDatos = (e) => {

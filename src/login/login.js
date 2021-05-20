@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import 'firebase/auth'
 import fire from "../config/fire";
-import { Link, useHistory } from "react-router-dom";
+import {useHistory } from "react-router-dom";
 
  
-export default (props) =>{
+function Login() {
   
   const firebase = fire;
   const [email, setEmail] = useState('');
@@ -61,3 +61,6 @@ export default (props) =>{
     </div>
   )
 }
+
+
+export default Login;
