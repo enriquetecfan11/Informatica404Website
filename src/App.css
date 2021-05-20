@@ -252,4 +252,13 @@ img {
   .text-inside{
     font-size: 20px
   }
+
+  .container-todo{
+  margin-left: 0px;
+  }
+
+  .container-all{
+  margin-left: 0px;
+  }
+
 }
