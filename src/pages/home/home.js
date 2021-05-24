@@ -15,7 +15,7 @@ const Home = () => {
           <div class="topnav-right">
           <Link to="/somos">Quienes Somos</Link>
             <Link to="/contacto">Contacto</Link>
-            <Link to="/login">login</Link>
+            <Link to="/login">Login</Link>
         </div>
 
       </div>
